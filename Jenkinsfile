@@ -15,5 +15,15 @@ Thanks
 Burcu''', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'bozcan@gmail.com'
 
    }
+   state('Slack Notifications')
+   {
+      slackSend baseUrl: ' https://hooks.slack.com/services/', 
+         channel: '#jenkins-pipeline-channel', 
+         color: 'good', 
+         message: 'Welcome to Jenkins, Slack!', 
+         teamDomain: 'Continuous Learning', 
+         tokenCredentialId: 'slack-demo'
+
+   }
   
 }
