@@ -15,7 +15,7 @@ Thanks
 Burcu''', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'bozcan@gmail.com'
 
    }
-   state('Slack Notifications')
+   stage('Slack Notifications')
    {
       slackSend baseUrl: ' https://hooks.slack.com/services/', 
          channel: '#jenkins-pipeline-channel', 
